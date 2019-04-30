@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0f28"/>
+    <meta name="msapplication-navbutton-color" content="#0a0f28"/>
+    <meta name="msapplication-TileColor" content="#0a0f28">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a0f28"/>
+    <meta name = "format-Detection" content = "telephone = no">
+    <meta name="google" value="notranslate">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <title>AC</title>
+</head>
+<body class="results-page-bg">
+<div id="svg-sprite"></div>
+<div id="svg-gradient"></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h3" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+            <form class="form ">
+                <div class="form-group form-animation form-validation form-validation_success">
+                    <input type="text" class="js-form-input form__input" id="nick-name" placeholder="Enter email">
+                </div>
+                <div class="form-group form-animation form-validation form-validation_error">
+                    <input type="email" class="js-form-input form__input" placeholder="Enter email">
+                </div>
+                <div class="form-group form-animation form-validation">
+                    <input type="password" class="js-form-input form__input" placeholder="Password" autocomplete="off">
+                </div>
+                <div class="form-group form-animation form-validation">
+                    <input type="password" class="js-form-input form__input" placeholder="Confirmation" autocomplete="off">
+                </div>
+                <div class="form-group form-group_checkbox">
+                    <input type="checkbox" class="form__checkbox" id="exampleCheck1">
+                    <label class="form__label" for="exampleCheck1">I agree all statements in</label> <a href="javascript:void(0)" class="text-cyan">Terms & Conditions</a>
+                </div>
+                <div class="form-group form-group_footer">
+                    <button type="button" class="btn btn_pink">sign in</button>
+                    <span class="ml-3 d-inline-block align-middle">Already have account? <a class="text-cyan" href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</div><header >
+    <div class="header-container fixed-top">
+    <div class="header">
+        <div class="header__left-elem">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/i/header/AC_logo_small.png" alt="logo" class="logo img-fluid">
+                </a>
+            </div>
+            <div class="header__social">
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#instagram"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#twitch"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#youtube"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="header__burger">
+           <button id="js-burger" class="burger">
+               <span class="burger__item burger__item_top"></span>
+               <span class="burger__item burger__item_center"></span>
+               <span class="burger__item burger__item_bottom"></span>
+           </button>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="nomination.html" class="nav__link active" data-text="nomination">nomination
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="results.html" class="nav__link" data-text="results">results
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="conditions.html" class="nav__link" data-text="conditions">conditions
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__buttons">
+           <div>
+                <button class="btn btn_pink" data-toggle="modal" data-target="#exampleModal">sign in</button>
+                <button class="btn btn_cyan">join now</button>
+           </div>
+        </div>
+    </div>
+    <div id="js-menu" class="nav-mobile">
+        <ul role="navigation" class="nav">
+            <li class="nav__item">
+                <a href="nomination.html" class="nav__link" data-text="nomination">nomination
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="results.html" class="nav__link" data-text="results">results
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="conditions.html" class="nav__link" data-text="conditions">conditions
+                </a>
+            </li>
+        </ul>
+        <div class="header__social">
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#instagram"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#twitch"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#youtube"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+</header><main class="main-content results-page">
+    <section>
+        <div class="results">
+            <h2 class="h1 block-title">RESULTS</h2>
+            <div class="finalists-block">
+                <div class="finalists-block__item">
+                    <h4 class="h4 finalists-block__title">SPINS</h4>
+                    <div class="finalists-block__img">
+                        <svg class="finalists-block__icon">
+                            <use xlink:href="#SPINS32"/>
+                        </svg>
+                    </div>
+                    <p class="finalists-block__text">Affiliate</p>
+                </div>
+                <div class="finalists-block__item">
+                    <h4 class="h4 finalists-block__title">FTD world</h4>
+                    <div class="finalists-block__img">
+                        <svg class="finalists-block__icon">
+                            <use xlink:href="#FTD_WORLD20"/>
+                        </svg>
+                    </div>
+                    <p class="finalists-block__text">SeoGamblings</p>
+                </div>
+                <div class="finalists-block__item">
+                    <h4 class="h4 finalists-block__title">FTD CIS</h4>
+                    <div class="finalists-block__img">
+                        <svg class="finalists-block__icon">
+                            <use xlink:href="#FTD_CIS2"/>
+                        </svg>
+                    </div>
+                    <p class="finalists-block__text">kawabanga1985</p>
+                </div>
+                <div class="finalists-block__item">
+                    <h4 class="h4 finalists-block__title">FTD NEW</h4>
+                    <div class="finalists-block__img">
+                        <svg class="finalists-block__icon">
+                            <use xlink:href="#FTD_NEW10"/>
+                        </svg>
+                    </div>
+                    <p class="finalists-block__text">Affiliate</p>
+                </div>
+                <div class="finalists-block__item">
+                    <h4 class="h4 finalists-block__title">SUM FTD WORLD</h4>
+                    <div class="finalists-block__img">
+                        <svg class="finalists-block__icon">
+                            <use xlink:href="#SUM_FTD_WORLD40"/>
+                        </svg>
+                    </div>
+                    <p class="finalists-block__text">bantyc</p>
+                </div>
+            </div>
+            <div class="results-tables">
+               <div class="container">
+                   <div class="results-tables__item">
+                           <div class="table-wrapper">
+                               <table id="test" class="table">
+                                   <caption>FTD CIS</caption>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">№</th>
+                                           <th scope="col">Affiliate</th>
+                                           <th scope="col">Score</th>
+                                           <th scope="col">Prize</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS0"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">2</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS2"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">3</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS3"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS4"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS5"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">6</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS6"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">7</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS7"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">8</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS8"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">9</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS9"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">10</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_CIS1"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   <div class="results-tables__item">
+                           <div class="table-wrapper">
+                               <table class="table for_decorative_blocks">
+                                   <caption>FTD World</caption>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">№</th>
+                                           <th scope="col">Affiliate</th>
+                                           <th scope="col">Score</th>
+                                           <th scope="col">Prize</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD20"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985eeeeeeeeaaaaaaaaaaåaaaaaaaaaaa</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">2</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD22"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">3</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD23"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD24"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD25"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">6</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD26"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">7</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD27"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">8</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD28"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">9</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD29"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">10</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_WORLD21"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   <div class="results-tables__item">
+                           <div class="table-wrapper">
+                               <table class="table  for_decorative_blocks">
+                                   <caption>FTD NEW</caption>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">№</th>
+                                           <th scope="col">Affiliate</th>
+                                           <th scope="col">Score</th>
+                                           <th scope="col">Prize</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW10"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985rrrrrrrrrrrr</span>
+                                           </td>
+                                           <td>11820000</td>
+                                           <td>$ 99 000 </td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">2</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW12"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">3</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW13"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW14"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW15"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">6</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW16"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">7</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW17"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">8</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW18"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">9</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW19"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">10</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#FTD_NEW11"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   <div class="results-tables__item">
+                           <div class="table-wrapper">
+                               <table class="table  for_decorative_blocks">
+                                   <caption>SPINS</caption>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">№</th>
+                                           <th scope="col">Affiliate</th>
+                                           <th scope="col">Score</th>
+                                           <th scope="col">Prize</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS30"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">2</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS32"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">3</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS33"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS34"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS35"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">6</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS36"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">7</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS37"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">8</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS38"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">9</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS39"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">10</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SPINS31"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                   <div class="results-tables__item">
+                           <div class="table-wrapper">
+                               <table class="table  for_decorative_blocks">
+                                   <caption>SUM FTD WORLD</caption>
+                                   <thead>
+                                       <tr>
+                                           <th scope="col">№</th>
+                                           <th scope="col">Affiliate</th>
+                                           <th scope="col">Score</th>
+                                           <th scope="col">Prize</th>
+                                       </tr>
+                                   </thead>
+                                   <tbody>
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD40"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">2</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD42"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">3</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD43"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">4</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD44"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">5</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD45"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">6</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD46"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">7</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD47"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">8</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD48"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">9</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD49"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                       <tr>
+                                           <th scope="row">10</th>
+                                           <td>
+                                               <svg class="svg-icon svg-icon_table">
+                                                   <use xlink:href="#SUM_FTD_WORLD41"/>
+                                               </svg>
+                                               <span class="nickname">kawabanga1985</span>
+                                           </td>
+                                           <td>1182</td>
+                                           <td>$ 29 000</td>
+                                       </tr>
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+               </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__social">
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#instagram"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#twitch"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#youtube"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link common-link">Playattack Affiliate Program</a>
+                <a href="#" class="footer__link common-link">Terms&Conditions</a>
+                <a href="mailto:info@playattack.com" class="footer__link common-link">affiliate.contest@playattack.com</a>
+            </div>
+            <div class="footer__logo">
+                <img src="assets/i/footer/footer-logo.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="footer__copyright">Copyright 2018, PlayAttack Casino Affiliate Program</div>
+        </div>
+    </div>
+</footer><script src="assets/js/main.min.js"></script>
+<script>
+$(document).ready(function() {
+    console.log($('#test').offset());
+});
+
+</script>
+</body>
+</html>

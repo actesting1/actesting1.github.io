@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0f28"/>
+    <meta name="msapplication-navbutton-color" content="#0a0f28"/>
+    <meta name="msapplication-TileColor" content="#0a0f28">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0a0f28"/>
+    <meta name = "format-Detection" content = "telephone = no">
+    <meta name="google" value="notranslate">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow, noodp">
+    <meta name="googlebot" content="index, follow">
+    <title>AC</title>
+</head>
+<body>
+<div id="svg-sprite"></div>
+<div id="svg-gradient"></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title h3" id="exampleModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body">
+            <form class="form ">
+                <div class="form-group form-animation form-validation form-validation_success">
+                    <input type="text" class="js-form-input form__input" id="nick-name" placeholder="Enter email">
+                </div>
+                <div class="form-group form-animation form-validation form-validation_error">
+                    <input type="email" class="js-form-input form__input" placeholder="Enter email">
+                </div>
+                <div class="form-group form-animation form-validation">
+                    <input type="password" class="js-form-input form__input" placeholder="Password" autocomplete="off">
+                </div>
+                <div class="form-group form-animation form-validation">
+                    <input type="password" class="js-form-input form__input" placeholder="Confirmation" autocomplete="off">
+                </div>
+                <div class="form-group form-group_checkbox">
+                    <input type="checkbox" class="form__checkbox" id="exampleCheck1">
+                    <label class="form__label" for="exampleCheck1">I agree all statements in</label> <a href="javascript:void(0)" class="text-cyan">Terms & Conditions</a>
+                </div>
+                <div class="form-group form-group_footer">
+                    <button type="button" class="btn btn_pink">sign in</button>
+                    <span class="ml-3 d-inline-block align-middle">Already have account? <a class="text-cyan" href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+  </div>
+</div><header >
+    <div class="header-container fixed-top">
+    <div class="header">
+        <div class="header__left-elem">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="assets/i/header/AC_logo_small.png" alt="logo" class="logo img-fluid">
+                </a>
+            </div>
+            <div class="header__social">
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#instagram"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#twitch"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#youtube"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="header__burger">
+           <button id="js-burger" class="burger">
+               <span class="burger__item burger__item_top"></span>
+               <span class="burger__item burger__item_center"></span>
+               <span class="burger__item burger__item_bottom"></span>
+           </button>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="nomination.html" class="nav__link active" data-text="nomination">nomination
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="results.html" class="nav__link" data-text="results">results
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="conditions.html" class="nav__link" data-text="conditions">conditions
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__buttons">
+           <div>
+                <button class="btn btn_pink" data-toggle="modal" data-target="#exampleModal">sign in</button>
+                <button class="btn btn_cyan">join now</button>
+           </div>
+        </div>
+    </div>
+    <div id="js-menu" class="nav-mobile">
+        <ul role="navigation" class="nav">
+            <li class="nav__item">
+                <a href="nomination.html" class="nav__link" data-text="nomination">nomination
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="results.html" class="nav__link" data-text="results">results
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="conditions.html" class="nav__link" data-text="conditions">conditions
+                </a>
+            </li>
+        </ul>
+        <div class="header__social">
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#instagram"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#twitch"/>
+                </svg>
+            </a>
+            <a href="#">
+                <svg class="svg-icon">
+                    <use xlink:href="#youtube"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    </div>
+</header><section class="conditions-top-block">
+   <div class="top-block__img">
+      <picture>
+          <source media="(max-width: 420px)" srcset="assets/i/Amazing-Tournament_420.jpg"  class="img-fluid">
+          <source media="(max-width: 768px)" srcset="assets/i/Amazing-Tournament_768.jpg"  class="img-fluid">
+          <img src="assets/i/Amazing-Tournament.jpg" alt="affiliate-contest" width="100%" class="img-fluid w-2561-hide"/>
+      </picture>
+   </div>
+</section>
+<main class="main-content">
+    <section>
+        <div class="conditions-block">
+            <h2 class="h1 block-title">conditions</h2>
+            <div class="conditions-content">
+                <h3 class="conditions-content__title h3">DEFINITIONS</h3>
+                <h5 class="conditions-content__subtitle h5">"Accounting period"</h5>
+                <p class="conditions-content-text">means atime period, allotted for the accumulation and calculation ofthe Affiliate Profit. The Accounting Periods are;</p>
+                <ol class="conditions-content-list">
+                    <li class="conditions-content-text">from the 1st to the 15th of the current calendar month;</li>
+                    <li class="conditions-content-text">from the 16th to the end of the current calendar month.</li>
+                </ol>
+                <h5 class="conditions-content__subtitle h5">"Agreement"</h5>
+                <p class="conditions-content-text">means and includes all the terms and conditions set out in this document, the General Terms and Conditions and any other rules and/or guidelines issued within the Affiliate Program, and appearing on PlayAttack Website.</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate"</h5>
+                <p class="conditions-content-text">means you, a natural person or entity, who registers on PlayAttack Website and who accepts this Agreement and will promote Operators Websites within the Affiliate Program</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Commission"</h5>
+                <p class="conditions-content-text">means the percentage of the Net Gaming Revenue as set out in the Affiliate Commission Structure</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Commission Structure"</h5>
+                <p class="conditions-content-text">means the commission structure contained under Clause 8 below and applicable for Revenue Share Payment Plan or any specific commission structure expressly agreed between PlayAttack and the Affiliate.</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Profit"</h5>
+                <p class="conditions-content-text">means the income the Affiliate earns within any of the Payment Plans in a given Accounting Period offered by PlayAttack based on the promotion of Operators Websites and by Players referred by the Affiliate to Operators Websites.</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Links"</h5>
+                <p class="conditions-content-text">means hyperlinks from the Affiliate Website(s) and/or other resources to the Operators Websites.</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Program"</h5>
+                <p class="conditions-content-text">means the collaboration between PlayAttack and the Affiliate, whereby the Affiliate will create Affiliate Links to and promote the Operators Websites to New Players.</p>
+                <h5 class="conditions-content__subtitle h5">"Affiliate Services"</h5>
+                <p class="conditions-content-text">means the Affiliate’s promotion of the Operators Websites and the creation of the Affiliate Links from the Affiliate Website(s) to the Operators Websites.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__social">
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#instagram"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#twitch"/>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="svg-icon">
+                        <use xlink:href="#youtube"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link common-link">Playattack Affiliate Program</a>
+                <a href="#" class="footer__link common-link">Terms&Conditions</a>
+                <a href="mailto:info@playattack.com" class="footer__link common-link">affiliate.contest@playattack.com</a>
+            </div>
+            <div class="footer__logo">
+                <img src="assets/i/footer/footer-logo.png" alt="logo" class="img-fluid">
+            </div>
+            <div class="footer__copyright">Copyright 2018, PlayAttack Casino Affiliate Program</div>
+        </div>
+    </div>
+</footer><script src="assets/js/main.min.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>
