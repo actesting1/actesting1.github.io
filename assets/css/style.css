@@ -6292,18 +6292,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .modal-header {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    position: relative;
     padding: 35px 50px;
     text-align: center;
 }
@@ -6315,11 +6304,20 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .modal-header .close {
-    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
     color: #ff1493;
     font-size: 24px;
-    line-height: 20px;
-    margin: -10px -10px -10px auto;
+    overflow: hidden;
+    background-color: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none !important;
 }
 
 .modal-title {
